@@ -1,0 +1,325 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    caret-color: #26C2AE;
+}
+
+
+body {
+    background-image: url('./icons/SPLITTER.svg');
+    background-repeat: no-repeat;
+    background-position: center top 10%;
+    background-color: #C5E4E7;
+    height: 1024px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 379px; */
+    height: 388px;
+}
+
+#form {
+    background-color: #fff;
+    width: 920px;
+    height: 481px;
+    border-radius: 25px;
+    padding: 32px 32px 32px 48px;
+    display: flex;
+    gap: 48px;
+    margin: auto;
+}
+
+.tipColor {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+    padding-top: 45px;
+}
+
+input[type=radio]:checked+label {
+    background: #9FE8DF;
+    color: #00474B;
+}
+
+#inputBill {
+    margin-bottom: 40px;
+
+}
+
+
+#bill[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+#bill {
+    background-image: url(./icons/dolar.svg);
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    padding-right: 17PX;
+    padding-left: 25px;
+    width: 379px;
+    height: 48px;
+    border: none;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #00474B;
+}
+
+#bill[type="number"]:focus {
+    outline-color: #26C2AE;
+}
+
+#bill::placeholder {
+    color: #00474B;
+    mix-blend-mode: normal;
+    opacity: 0.35;
+}
+
+#selectTip {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+#selectTip .tipColor {
+    padding-top: 0;
+    padding-bottom: 16px;
+}
+
+#persent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 379px;
+    height: 112px; */
+    gap: 16px 14px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    background: #00474B;
+    color: white;
+}
+
+#custom[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+#custom[type="number"]:focus {
+    outline-color: #26C2AE;
+}
+
+#custom {
+    border: none;
+    width: 117px;
+    height: 48px;
+    text-align: center;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    text-align: center;
+
+    color: #547878;
+
+}
+
+#custom::placeholder {
+    color: #547878;
+
+}
+
+label {
+
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    height: 48px;
+    cursor: pointer;
+}
+
+#inputBill label {
+    justify-content: flex-start;
+}
+
+#numbersP label {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#numbersP .tipColor {
+
+    padding-top: 0;
+    width: 100%;
+
+}
+
+#numberOfPeople[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+#numberOfPeople::placeholder {
+    color: #00474B;
+    mix-blend-mode: normal;
+    opacity: 0.35;
+}
+
+#numberOfPeople[type="number"]:focus {
+    outline-color: #26C2AE;
+}
+
+
+#numberOfPeople {
+    background-image: url(./icons/person.svg);
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    padding-right: 17px;
+    padding-left: 25px;
+    width: 379px;
+    height: 48px;
+    border: none;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #00474B;
+}
+
+#secondSections {
+    display: flex;
+    flex-direction: column;
+}
+
+#tipAmount {
+    padding: 62px 40px;
+    background-color: #00474B;
+    border-radius: 15px;
+    width: 413px;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.personColor {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+
+#counterTip,
+#counterTotal,
+.dolarTip {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #26C2AE;
+}
+
+
+#tip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 92px;
+}
+
+#total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 126px;
+
+}
+
+#calculate:last-child {
+    margin-top: auto;
+    border: none;
+    width: 333px;
+    height: 48px;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #0D686D;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+    mix-blend-mode: normal;
+    opacity: 0.35;
+}

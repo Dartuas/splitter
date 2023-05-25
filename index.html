@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Splitter</title>
+</head>
+
+<body>
+
+        <div id="form">
+            <section id="firstSection">
+                <div id="inputBill">
+                    <label for="bill"><span class="tipColor">Bill</span></label><br>
+                    <input type="number" id="bill" name="bill" placeholder="0">
+                </div>
+                <div id="selectTip">
+                    <span class="tipColor">Select Tip %</span>
+                    <div id="persent">
+                        <div>
+                            <input type="radio" name="tip" checked value="5%" id="five-percent"/>
+                            <label for="five-percent">
+                                <span>5%</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tip" value="10%" id="ten-percent" />
+                            <label for="ten-percent">
+                                <span>10%</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tip" value="15%" id="fifteen-percent" />
+                            <label for="fifteen-percent">
+                                <span>15%</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tip" value="25%" id="twenty-five-percent" />
+                            <label for="twenty-five-percent">
+                                <span>25%</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tip" value="50%" id="fifty-percent" />
+                            <label for="fifty-percent">
+                                <span>50%</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="number" name="tip" id="custom" placeholder="Custom" disabled/>
+                        </div>
+                    </div>
+                </div>
+                <div id="numbersP">
+                    <label for="numberOfPeople"><span class="tipColor">Number of people</span></label>
+                    <input type="number" id="numberOfPeople" placeholder="0">
+                </div>
+            </section>
+            <section id="secondSections">
+                <div id="tipAmount">
+    
+                    <div id="tip">
+                        <div>
+                            <p>Tip Amount</p>
+                            <span class="personColor">/ person</span>
+                        </div>
+                        <div id="counterTip"><span class="dolarTip">$</span>0.00</div>
+                    </div>
+    
+                    <div id="total">
+                        <div>
+                            <p>Total</p>
+                            <span class="personColor">/ person</span>
+                        </div>
+                        <div id="counterTotal"><span class="dolarTip">$</span>0.00</div>
+                    </div>
+                    <button id="calculate" disabled>Calculate</button>
+                </div>
+    
+            </section>
+        </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
